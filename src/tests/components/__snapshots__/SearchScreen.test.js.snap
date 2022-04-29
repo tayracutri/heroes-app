@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test on SerachScreen should show Batman and the input w the queryString valie 1`] = `
+<div>
+  <h1
+    className="m-4"
+  >
+    Search Screen
+  </h1>
+  <div
+    className="row"
+  >
+    <div
+      className="col-4"
+    >
+      <form
+        className="mt-4"
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="formText"
+          onChange={[Function]}
+          placeholder="Insert a superhero"
+          type="text"
+          value="batman"
+        />
+        <button
+          className="btn m-1 btn-block btn-outline-primary btn-block"
+          type="submit"
+        >
+           Submit
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-8"
+    >
+      <h5
+        className="mt-4"
+      >
+        Results
+      </h5>
+      <hr />
+      <div
+        className="col animate__animated animate__fadeIn"
+      >
+        <div
+          className="card"
+        >
+          <div
+            className="row no-gutters"
+          >
+            <div
+              className="col-4"
+            >
+              <img
+                alt="Batman"
+                className="card-img"
+                src="../assets/heroes/dc-batman.jpg"
+              />
+            </div>
+            <div
+              className="col-8"
+            >
+              <div
+                className="card-body"
+              >
+                <h5
+                  className="card-title"
+                >
+                  Batman
+                </h5>
+                <p
+                  className="card-text"
+                >
+                  Bruce Wayne
+                </p>
+                <p
+                  className="card-text"
+                >
+                  <small
+                    className="text-muted"
+                  >
+                    Detective Comics #27
+                  </small>
+                </p>
+                <a
+                  href="/hero/dc-batman"
+                  onClick={[Function]}
+                >
+                  Más...
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`test on SerachScreen should show the components w the default values 1`] = `
+<div>
+  <h1
+    className="m-4"
+  >
+    Search Screen
+  </h1>
+  <div
+    className="row"
+  >
+    <div
+      className="col-4"
+    >
+      <form
+        className="mt-4"
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="formText"
+          onChange={[Function]}
+          placeholder="Insert a superhero"
+          type="text"
+          value=""
+        />
+        <button
+          className="btn m-1 btn-block btn-outline-primary btn-block"
+          type="submit"
+        >
+           Submit
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-8"
+    >
+      <h5
+        className="mt-4"
+      >
+        Results
+      </h5>
+      <hr />
+      <div
+        className="alert alert-info"
+      >
+         Search a hero
+      </div>
+    </div>
+  </div>
+</div>
+`;

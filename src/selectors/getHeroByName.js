@@ -5,9 +5,7 @@ export const getHeroByName = (name) => {
         return []
     }
 
-
     name = name.toLocaleLowerCase();
-
 
     return heroesData.filter(hero => hero.superhero.toLocaleLowerCase().includes(name));
 }

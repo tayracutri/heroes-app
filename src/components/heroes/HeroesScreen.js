@@ -2,23 +2,17 @@ import { useMemo } from 'react';
 import { useParams, Navigate, useNavigate } from 'react-router-dom'
 import { getHeroById } from '../../selectors/getHeroById';
 
-//import batman from '../../assets/heroes/dc-batman.jpg'; //estatico
-
 const heroesImg = require.context('../../assets/heroes', true)
 
 export const HeroesScreen = () => {
 
     const { heroeId } = useParams();
     const navigate = useNavigate()
-
     const hero = useMemo(() => getHeroById(heroeId), [heroeId]);
-
-
 
     const handleReturn = () => {
         navigate(-1);
     }
-
 
     if (!hero) {
         return <Navigate to='/' />
@@ -32,8 +26,6 @@ export const HeroesScreen = () => {
         first_appearance,
         characters
     } = hero;
-
-    // const imagePath = `../assets/heroes/${id}.jpg`; // from
 
     return (
         <div className="row mt-5">

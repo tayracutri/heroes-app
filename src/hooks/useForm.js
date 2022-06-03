@@ -4,7 +4,6 @@ export const useForm = (initState = {}) => {
 
     const [values, setformState] = useState(initState)
 
-
     const reset = () => {
         setformState(initState);
     }

@@ -1,7 +1,6 @@
 // import React from 'react'
 import { heroesData } from '../data/heroesData'
 
-
 export const getHeroByPublisher = (publisher) => {
 
     const validPublishers = ['DC Comics', 'Marvel Comics']

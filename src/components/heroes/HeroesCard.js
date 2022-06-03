@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 
-
 export const HeroesCard = ({
     id,
     superhero,
@@ -10,8 +9,6 @@ export const HeroesCard = ({
     characters,
 }) => {
     const heroesImg = require.context('../../assets/heroes', true)
-
-
 
     return (
         <div className="col animate__animated animate__fadeIn">
@@ -36,7 +33,6 @@ export const HeroesCard = ({
                             <p className="card-text">
                                 <small className="text-muted">{first_appearance}</small>
                             </p>
-
 
                             <Link to={`/hero/${id}`}>
                                 Más...

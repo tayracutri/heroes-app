@@ -1,13 +1,9 @@
 import React from 'react';
 import { Routes, BrowserRouter, Route } from "react-router-dom";
-
 import { PrivateRoute } from './PrivateRoute';
 import { PublicRoute } from './PublicRoute';
-
 import { LoginScreen } from '../components/login/LoginScreen';
 import { DashboardRoutes } from './DashboardRoutes';
-
-
 
 export const AppRouter = () => {
 
@@ -22,13 +18,11 @@ export const AppRouter = () => {
 
                 } />
 
-
                 <Route path='/*' element={
                     <PrivateRoute>
                         <DashboardRoutes />
                     </PrivateRoute>
                 } />
-
 
             </Routes>
         </BrowserRouter>
